@@ -4,7 +4,7 @@
 
 int main() {
     AbstractIO *in = FactoryIO::buildFile("input.txt");
-    AbstractIO *out = FactoryIO::buildFile("output.txt");
+    AbstractIO *out = FactoryIO::buildFile("output.txt", true);
     AbstractIO *console = FactoryIO::buildConsole();
 
     copy(in, console);
